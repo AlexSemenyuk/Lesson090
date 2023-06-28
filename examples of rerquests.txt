@@ -1,0 +1,109 @@
+// Address
+###
+GET http://localhost:8080/api/v1/address/
+
+
+###
+GET http://localhost:8080/api/v1/address/3
+
+<> 2023-06-28T121818.200.json
+
+###
+POST http://localhost:8080/api/v1/address/
+Content-Type: application/json
+
+{
+  "country": "Ukraine",
+  "city": "Dnipro",
+  "addressLine1": "Naberezhna, 20",
+  "addressLine2": null
+}
+
+
+###
+PUT http://localhost:8080/api/v1/address/2
+Content-Type: application/json
+
+{
+"country": "Ukraine",
+"city": "Kyiv",
+"addressLine1": "Insha vulytsya, 101",
+"addressLine2": null
+}
+
+
+###
+DELETE http://localhost:8080/api/v1/address/2
+Content-Type: application/json
+
+
+
+// Student
+
+###
+GET http://localhost:8085/api/v1/student/
+
+
+
+###
+GET http://localhost:8085/api/v1/student/1
+
+<> 2023-06-28T123441.400.json
+
+
+###
+POST http://localhost:8085/api/v1/student/
+Content-Type: application/json
+
+{
+  "firstName": "Ann",
+  "lastName": "Utkina",
+  "birthday": "1980-03-24",
+  "phone": "+38 095 658 89 87",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Dnipro",
+  "addressLine1": "Yavornitskogo, 101",
+  "addressLine2": null
+}
+
+###
+PUT http://localhost:8085/api/v1/student/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "firstName": "Alexandra",
+  "lastName": "Chromova",
+  "birthday": "1980-02-12",
+  "phone": "+38 098 658 89 88",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Kyiv",
+  "addressLine1": "Druga vulytsya, 101",
+  "addressLine2": null
+}
+
+
+###
+DELETE http://localhost:8085/api/v1/student/1
+Content-Type: application/json
+
+
+// For validation
+###
+POST http://localhost:8085/api/v1/student/
+Content-Type: application/json
+
+{
+  "firstName": "Ann",
+  "lastName": "Utkina",
+  "birthday": "1980-03-24",
+  "phone": "+38 095 658 89 87",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Dnipro",
+  "addressLine1": "Yavornitskogo, 101 aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa  aaaaaaaaaa ",
+  "addressLine2": null
+}
+
