@@ -1,0 +1,103 @@
+###
+// Все с admin admin
+###
+POST http://localhost:8085/api/auth/token/
+Authorization: Basic admin admin
+
+###
+GET http://localhost:8085/api/v1/student/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2ODg0MDgwNzYsImlhdCI6MTY4ODQwNDQ3Niwic2NvcGUiOiJFRElUIn0.3h3cptXTZHIYAZCDSZk16BlqnD_uXXstmmaut7vtysmEZmBOVHoKYWnWo_K_Pz-Lqa9-pPuVoaB1D72lbfInjw
+
+
+###
+POST http://localhost:8085/api/v1/student/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2ODg0MDgwNzYsImlhdCI6MTY4ODQwNDQ3Niwic2NvcGUiOiJFRElUIn0.3h3cptXTZHIYAZCDSZk16BlqnD_uXXstmmaut7vtysmEZmBOVHoKYWnWo_K_Pz-Lqa9-pPuVoaB1D72lbfInjw
+
+{
+  "firstName": "Anna",
+  "lastName": "Utkina",
+  "birthday": "1980-03-24",
+  "phone": "+38 095 658 89 87",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Dnipro",
+  "addressLine1": "Yavornitskogo, 101",
+  "addressLine2": null
+}
+
+###
+PUT http://localhost:8085/api/v1/student/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2ODg0MDgwNzYsImlhdCI6MTY4ODQwNDQ3Niwic2NvcGUiOiJFRElUIn0.3h3cptXTZHIYAZCDSZk16BlqnD_uXXstmmaut7vtysmEZmBOVHoKYWnWo_K_Pz-Lqa9-pPuVoaB1D72lbfInjw
+
+{
+  "id": 3,
+  "firstName": "Alexandra",
+  "lastName": "Chromova",
+  "birthday": "1980-02-12",
+  "phone": "+38 098 658 89 88",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Kyiv",
+  "addressLine1": "Druga vulytsya, 101",
+  "addressLine2": null
+}
+
+###
+DELETE http://localhost:8085/api/v1/student/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2ODg0MDgwNzYsImlhdCI6MTY4ODQwNDQ3Niwic2NvcGUiOiJFRElUIn0.3h3cptXTZHIYAZCDSZk16BlqnD_uXXstmmaut7vtysmEZmBOVHoKYWnWo_K_Pz-Lqa9-pPuVoaB1D72lbfInjw
+
+###
+// Все с user user
+###
+POST http://localhost:8085/api/auth/token/
+Authorization: Basic user user
+
+###
+GET http://localhost:8085/api/v1/student/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoidXNlciIsImV4cCI6MTY4ODQwODUxOSwiaWF0IjoxNjg4NDA0OTE5LCJzY29wZSI6IlJFQUQifQ.Dki1wmGQ6YGQLc2Cr2QvSjOxLEAO6vgrzZ-cM7sPnc6WTE7_zQd9sBaXW1TNAUFZ5X-Xc0XCdQP6TT-kD3uHQQ
+
+
+###
+POST http://localhost:8085/api/v1/student/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoidXNlciIsImV4cCI6MTY4ODQwODUxOSwiaWF0IjoxNjg4NDA0OTE5LCJzY29wZSI6IlJFQUQifQ.Dki1wmGQ6YGQLc2Cr2QvSjOxLEAO6vgrzZ-cM7sPnc6WTE7_zQd9sBaXW1TNAUFZ5X-Xc0XCdQP6TT-kD3uHQQ
+
+{
+  "firstName": "Anna",
+  "lastName": "Utkina",
+  "birthday": "1980-03-24",
+  "phone": "+38 095 658 89 87",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Dnipro",
+  "addressLine1": "Yavornitskogo, 101",
+  "addressLine2": null
+}
+
+###
+PUT http://localhost:8085/api/v1/student/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoidXNlciIsImV4cCI6MTY4ODQwODUxOSwiaWF0IjoxNjg4NDA0OTE5LCJzY29wZSI6IlJFQUQifQ.Dki1wmGQ6YGQLc2Cr2QvSjOxLEAO6vgrzZ-cM7sPnc6WTE7_zQd9sBaXW1TNAUFZ5X-Xc0XCdQP6TT-kD3uHQQ
+
+{
+  "id": 3,
+  "firstName": "AlexandraV",
+  "lastName": "Chromova",
+  "birthday": "1980-02-12",
+  "phone": "+38 098 658 89 88",
+  "email": "privet@privetks.ua",
+  "country": "Ukraine",
+  "city": "Kyiv",
+  "addressLine1": "Druga vulytsya, 101",
+  "addressLine2": null
+}
+
+###
+DELETE http://localhost:8085/api/v1/student/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoidXNlciIsImV4cCI6MTY4ODQwODUxOSwiaWF0IjoxNjg4NDA0OTE5LCJzY29wZSI6IlJFQUQifQ.Dki1wmGQ6YGQLc2Cr2QvSjOxLEAO6vgrzZ-cM7sPnc6WTE7_zQd9sBaXW1TNAUFZ5X-Xc0XCdQP6TT-kD3uHQQ
